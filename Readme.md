@@ -18,11 +18,11 @@ Register app is used to register the new user. Fisrt the information of new user
 9. Click train model to train the face identification model for given person.
 10. Close the register.py window register is now complete.
 
-#### Create User Tab
-![register1](/screenshots/register1.png)
+## Create New User
+![register1](/5.png)
 
-#### Generate Face Dataset Tab
-![register2](/5.png)
+## Train New Faces
+![register2](/1.png)
 
 
 ### Surveillance
