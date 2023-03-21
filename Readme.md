@@ -22,7 +22,7 @@ Register app is used to register the new user. Fisrt the information of new user
 ![register1](/screenshots/register1.png)
 
 #### Generate Face Dataset Tab
-![register2](/screenshots/register2.png)
+![register2](/5.png)
 
 
 ### Surveillance
