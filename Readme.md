@@ -19,7 +19,8 @@ Register app is used to register the new user. Fisrt the information of new user
 10. Close the register.py window register is now complete.
 
 ## Overall Architecture of the System
-![register1](/2.png)
+![6](https://user-images.githubusercontent.com/42670033/226665941-3d26156d-4be1-425b-9718-0a3aa0599599.png)
+
 
 ## Create New User
 ![register1](/5.png)
