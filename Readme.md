@@ -20,6 +20,7 @@ Register app is used to register the new user. Fisrt the information of new user
 
 ## Create New User
 ![register1](/5.png)
+![register1](/3.png)
 
 ## Train New Faces
 ![register2](/1.png)
