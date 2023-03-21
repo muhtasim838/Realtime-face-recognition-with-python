@@ -25,8 +25,7 @@ Register app is used to register the new user. Fisrt the information of new user
 ## Train New Faces
 ![register2](/1.png)
 
-
-
+## Registration process
 https://user-images.githubusercontent.com/42670033/226664300-9edca903-303e-4abe-b627-92f14ec29e23.mp4
 
 
