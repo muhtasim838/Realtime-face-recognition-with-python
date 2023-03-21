@@ -5,7 +5,6 @@ Real-time Face Recognition based Surveillance System uses [MS-FACE](https://azur
 ### New User Registration
 Register app is used to register the new user. Fisrt the information of new user is added to sqlite3 database (users.db). Then a personid is created for new person using MSFace APIs. Opencv2 with ***haarcascade classifier*** is used to extract the face from the captured images. After taking 8 face images for training these images are uploaded to cloudinary and added to MSFace APIs using *add_person_face* api calls. After uploading dataset to MSFace a model is build and trained so that it can identify the new person.
 
-
 #### Steps for Registeration of a new person
 1. Run register.py file using ```python register.py```. It will open pyqt GUI window.
 2. Edit the details of users to be registered.
@@ -21,25 +20,21 @@ Register app is used to register the new user. Fisrt the information of new user
 ## Overall Architecture of the System
 ![6](https://user-images.githubusercontent.com/42670033/226665941-3d26156d-4be1-425b-9718-0a3aa0599599.png)
 
-
 ## Create New User
-![register1](/5.png)
-![register1](/3.png)
+![5](https://user-images.githubusercontent.com/42670033/226666210-c1e93285-9c20-4f1f-b13c-3a91c3dfc23b.png)
+![3](https://user-images.githubusercontent.com/42670033/226666236-efc44d65-366f-4782-8eb7-5aee38d9907f.png)
 
 ## Train New Faces
-![register2](/1.png)
+![1](https://user-images.githubusercontent.com/42670033/226666298-de51a000-4a49-4b4c-b398-75172a443dc8.png)
 
 ## Registration process
 https://user-images.githubusercontent.com/42670033/226664300-9edca903-303e-4abe-b627-92f14ec29e23.mp4
 
-
-
 ### Surveillance
 Surveillance app takes images at a regular time interval defined by *detection_interval* in ms (default value=10000, means 10 seconds). After taking images it extract all faces from the images using ***haarcascade classifier***  in opencv2. These face images are then uploaded to cloudinary and the cloudinary link is passed with api request to msface api. Two requests are send for a face identification first to add the face and generate a *face_id* and second to get *person_id* from the *face_id*. The *person_id* is used to get the information of the person from sqlite3 database (users.db). A green rectangle is drawn around the identified persons faces with there name while for unidentified persons a red rectangle is drawn with Unknown as their names. faces of all unknown persons are stored in *Unknowns* folder in the main directory with the current date and time which can be checked later for surveillance.
 
-![main1](/4.png)
+![4](https://user-images.githubusercontent.com/42670033/226666367-7356356b-ef5a-4b01-991f-6e23234930a8.png)
 
- 
 ## Language used
 
  Python 2.7
@@ -69,7 +64,6 @@ Surveillance app takes images at a regular time interval defined by *detection_i
  5. Cloudinary <br/>
   Run ```pip install cloudinary```
   
- 
 ## APIs used
  1. Microsoft Cognitive Services Face APIs (for building face identification model)
  2. Cloudinary APIs (for storing dataset)
